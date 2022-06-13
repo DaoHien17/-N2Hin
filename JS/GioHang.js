@@ -2,6 +2,15 @@ var list = [{
     Ten: "Alaska",
     Gia: 150000,
     Anh: "./Ảnh/chó/ALASKA/1.png.jfif",
+}, {
+    Ten: "Poodle",
+    Gia: 150000,
+    Anh: "Ảnh/chó/POODLE/1.jfif",
+},
+{
+    Ten: "Poodle",
+    Gia: 150000,
+    Anh: "Ảnh/chó/ALASKA/4.jpg",
 }]
 
 
@@ -13,24 +22,24 @@ function loadCart() {
     for (var i = 0; i < listGioHang.length; i++) {
         item = listGioHang[i]
         tong = tong + parseInt(item.SoLuong) * parseInt(item.Gia)
-        html = html + ` <tr>
-    <td>
-        <div class="sanpham">
-            <img width="100" src="${item.Anh}" />
-            <div class="content_sanpham">
-                <p> ${item.Ten} </p>
+        html = html + `<tr>
+        <td>
+            <div class="sanpham">
+                <img width="100" src="${item.Anh}" />
+                <div class="content_sanpham">
+                    <p> ${item.Ten} </p>
+                </div>
             </div>
-        </div>
-    </td>
-    <td>${parseInt(item.Gia).toLocaleString()}đ</td>
-    <td class="quantity">
-        <button onclick="updateGioHang(${i},0)">-</button>
-        <input id="q_1" type="text"  value="${item.SoLuong}">
-        <button onclick="updateGioHang(${i},1)">+</button>
-        <button onclick="deleteGioHang(${i},1)">x</button>
-    </td>
-    <td>${(parseInt(item.Gia)*parseInt(item.SoLuong)).toLocaleString()}đ</td>
-</tr>`
+        </td>
+        <td>${parseInt(item.Gia).toLocaleString()}đ</td>
+        <td class="quantity">
+            <button onclick="updateGioHang(${i},0)">-</button>
+            <input id="q_1" type="text"  value="${item.SoLuong}">
+            <button onclick="updateGioHang(${i},1)">+</button>
+            <button onclick="deleteGioHang(${i},1)">x</button>
+        </td>
+        <td>${(parseInt(item.Gia) * parseInt(item.SoLuong)).toLocaleString()}đ</td>
+    </tr>`
     }
     document.getElementById("gioHang").innerHTML = html;
     document.getElementById("tien").innerHTML = `<div id="tien" class="tien">${tong.toLocaleString()}đ</div>`
