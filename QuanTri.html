@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Trị </title>
+    <link rel="stylesheet" href="CSS/QuanTri.css">
+    <link rel="stylesheet" href="CSS/GioHang.CSS">
+    <link rel="stylesheet" href="https://www.flaticon.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<BODY>
+    <div  class="Xchao"><H3 style="font-size: 20px ;"> <i class="fa-solid fa-user-plus"></i> Xin chào Đào Hiên</H3></div>
+    <br>
+    <div class="Qtri">
+       
+        <div class="DSqtri">
+            <h3>Trang Quản Trị</h3>
+            <div class="menuQTri"><a class="muc" href="">Tổng Quan </a></div>            
+            <div class="menuQTri"><a class="muc" href="">Loại Thú Cưng </a></div>
+            <div class="menuQTri"><a class="muc" href="">Thú Cưng </a></div>
+            <div class="menuQTri"><a class="muc" href="">Khách Hàng </a></div>
+            <div class="menuQTri"><a class="muc" href="">Nhân Viên</a></div>
+            <div class="menuQTri"><a class="muc" href="">Tin Tức </a></div>
+            <div class="menuQTri"><a class="muc" href="">Thú Cưng </a></div>
+            <div class="menuQTri"><a class="muc" href="">Thống Kê </a></div>          
+
+        </div>
+        <div class="ThongTin">
+            <h3>  Nhập Thông Tin Sản Phẩm</h3>
+            <div class="Dong1">
+                <div class="ten"><a>Mã Sản Phẩm:  </a></div>
+                <div><input class= "inputt"type="text" placeholder="Nhập Mã Sản Phẩm "></div>
+            </div>
+            <div class="Dong1">
+                <div class="ten"><a>Tên Sản Phẩm:  </a></div>
+                <div><input class= "inputt" type="text" placeholder="Nhập Tên Sản Phẩm"></div>
+            </div>
+            <div class="Dong1">
+                <div class="ten" ><a>Đặc Điểm Sản Phẩm:  </a></div>
+                <div><input class= "inputt" type="text" placeholder="Nhập Đặc Điểm Sản Phẩm."></div>
+            </div>
+            <div class="Dong1">
+                <div class="ten"><a>Hình Ảnh:  </a></div> <i style="color:red;" class="fa-solid fa-image"></i> Thêm Hình Ảnh
+                <div><input class= "inputt" type="text"  placeholder=" Không có tệp nào được lựa chọn"></div>
+            </div>
+            <div class="Dong1">
+                <div  class="ten" ><a>Giá Bán:  </a></div>
+                <div ><input class= "inputt" type="text" placeholder="Nhập Giá Bán"></div>
+            </div>
+            <div class="dn_dk">
+                <a href=""><button> Thêm Sản Phẩm </button></a>
+                <a href="index.HTML"><button> Thoát </button></a>
+            </div> 
+        </div>
+        <div class="DanhSach">
+            <h3> <i class="fa-solid fa-list"></i> Danh Sách Thông Tin Sản Phẩm</h3>
+            <div class="timkiem">
+                <input  class= "inputtt" type="text" placeholder=" Tìm Kiếm Sản Phẩm">
+                <a href=""><button> <i class="fa-solid fa-magnifying-glass"></i> Tìm Kiếm </button></a>
+                                  
+                              
+            </div>
+            <div  class="giohangcuaban">
+                <table style="width: 100%">
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Số Lượng</th>
+                        <th>Giá</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="sanpham">
+                                <img width="100" src="Ảnh/chó/HUSKY/1.jfif"/>
+                            </div>
+                        </td>
+                        <td>Chó HUSKY - Trắng</td>
+                        <td class="quantity">
+                            
+                            <input id="q_1" type="text" onchange="updateQuantity(01)" value="0">
+                           
+                            </td>
+                        <td>2.000.000 vnđ </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="sanpham">
+                                <img width="100" src="Ảnh/chó/HUSKY/1.jfif"/>
+                            </div>
+                        </td>
+                        <td>Chó HUSKY - Trắng</td>
+                        <td class="quantity">
+                            
+                            <input id="q_1" type="text" onchange="updateQuantity(01)" value="0">
+                           
+                            </td>
+                        <td>2.000.000 vnđ </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="sanpham">
+                                <img width="100" src="Ảnh/chó/HUSKY/1.jfif"/>
+                            </div>
+                        </td>
+                        <td>Chó HUSKY - Trắng</td>
+                        <td class="quantity">
+                            
+                            <input id="q_1" type="text" onchange="updateQuantity(01)" value="0">
+                           
+                            </td>
+                        <td>2.000.000 vnđ </td>
+                    </tr>
+                </table>
+        
+            </div>
+        </div>
+    </div>
+</BODY>
+
+</html>

@@ -1,0 +1,111 @@
+td {
+    border: 1px solid;
+    padding: 15px;
+    text-align: center;
+    border-color: rgb(243, 170, 233);
+
+}
+
+th {
+    border-bottom: 3px solid;
+    border-color: coral;
+    padding: 15px;
+
+    text-align: center;
+
+    font-size: 23px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    /* border-collapse: collapse; Khoảng trống giữa các đường viền (border) của table bị loại bỏ, chỉ còn đường viền duy nhất */
+}
+
+.sanpham {
+    display: flex;
+}
+
+.content_sanpham {
+    padding-left: 20px;
+}
+
+.quantity button {
+    width: 24px;
+    height: 24px;
+}
+
+.quantity input {
+    width: 33px;
+    padding: 3px;
+    text-align: center;
+    outline: none;
+
+}
+.frm-giohang{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.giohang{
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.giohangcuaban{
+    width: 65%;
+}
+.Thongtindonhang{
+    width: 35%;
+    justify-content: center;
+    /* border: 1px solid ; */
+}
+.Thongtindonhang > h2{
+    color: red;
+    font-weight: bold;
+    text-decoration:underline;  
+
+ }
+
+.Thongtindonhang > .ctHD{
+    width: 95%;   
+    /* border: 1px solid ; */
+    padding: 5PX 20PX 15px 20px ;
+}
+.Thongtindonhang > .ctHD >  .NDCTHD{
+   
+    margin-top: 15px;
+    display: flex;
+    justify-content: right;
+    /* background-color: aqua; */
+}
+.Thongtindonhang > .ctHD >  .NDCTHD >h3{
+    width: 45%;
+    font-size: 17px;
+}
+.Thongtindonhang > .ctHD >  .NDCTHD > .tien{
+  padding-left: 20px;
+  text-align: right;
+  width: 55%;
+  /* background-color: rgb(255, 0, 217); */
+
+}
+.Thongtindonhang > .ctHD >  .NDCTHD >a > button{
+    background-color: red;    /* màu  */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    width: 100%;
+  
+  }
+  .Thongtindonhang > .ctHD >  .NDCTHD >a > button:hover{
+    background-color: rgb(233, 64, 64); 
+  }

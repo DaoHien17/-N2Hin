@@ -1,0 +1,123 @@
+.Dau {
+    background-color: rgb(254, 254, 254);    /*màu */
+    width: 100%;    /*độ rộng*/
+    height: 100PX;
+    display: flex;
+    justify-content: left;    /*căn lề*/
+    font-weight: bold;  /* chữ đậm */
+    font-size: 14px;
+
+
+}
+
+
+.Dau>.LOGO {
+    background-color: white;
+    /*màu */
+    width: 20%;
+    /*độ rộng*/
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.Dau>.LOGO>.anh {
+    width: 30%;
+    height: 100%;
+    margin-right: 50px;
+
+}
+
+.Dau>.LOGO>.anh>img {
+    width: max-content;
+    height: 100px;
+
+}
+.Dau >.ten {
+   margin-top: 3%;
+   font-size: 25px;
+
+    
+}
+
+.dangnhap{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-bottom: 20px;    /* justify-content: center; */
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-pet-supplies-promotion-banner-poster-image_195124.jpg);
+}
+.dangnhap > .dn{
+    width: 30%;
+    height: 350px;
+    /* background-color: aqua; */
+    margin-top: 5%;
+    margin-left: 22%; 
+    border-radius: 60px;
+    border: 1px solid gray  ;
+  
+}
+.dangnhap > .dn > h1{
+     margin-top: 5%;
+     text-align: center;
+}
+.dangnhap > .dn >.TTDK{
+    display: flex;
+    margin-bottom: 5px;
+}
+.dangnhap > .dn >.TTDK > .tenDK{
+    width: 35%;
+    height: auto;   
+    padding: 0px 30px;
+  
+}
+.dangnhap > .dn >.TTDK > .ODK{
+    width: 55%;
+    height: auto; 
+    background-color: #c52525;
+}
+.dangnhap > .dn >.TTDK > .ODK > input{
+    font-size: 80%;
+    width: 100%;
+    margin-left: 3%;
+    padding: 5px 5px 5px 5px;
+}
+/* .dangnhap > .dn > h3{
+    margin-top: 5%;
+    text-align: center;
+}
+.dangnhap > .dn > h3 > input{
+    font-size: 80%;
+    margin-left: 3%;
+    padding: 5px 5px 5px 5px;
+    
+} */
+.dangnhap > .dn > .dn_dk
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+      
+}
+.dangnhap > .dn > .dn_dk > a >button {
+    background-color: #c0c525;    /* màu  */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    
+}
+.dangnhap > .dn > .dn_dk > a >button:hover{
+    background-color: #c52525;    /* màu  */
+}
+    
+
+
+

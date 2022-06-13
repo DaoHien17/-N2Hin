@@ -1,0 +1,124 @@
+.Xchao{
+    width: 100%;
+    text-align:right;
+    background-color: rgb(237, 169, 22);
+    padding: 1px 1px 1px 1px;
+    
+}
+ h3{
+    font-size: 30px;
+   padding-right: 3%;
+}
+
+.Qtri{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* background-color: aqua; */
+    
+}
+.Qtri > .DSqtri{
+    width: 20%;
+    height: auto;
+    border-right: 2px solid ;
+    margin-left: 2%;
+   
+    /* background-color: rgb(255, 157, 0); */
+}
+.menuQTri{
+    padding-top:20px ; 
+    
+  
+}
+.menuQTri:hover{
+    /* font-size: 18px; */
+    background-color: rgb(237, 169, 22);
+    text-decoration :underline;
+    padding:  6px 6px 5px 5px;
+    border-radius: 5px;
+  
+}
+.muc
+{    
+    font-size: 20px;
+    color: black;
+    text-decoration: none;    /* kiểu k gạch chân*/
+}
+ 
+.Qtri > .ThongTin{
+    width: 40%;
+    height: auto;
+    margin-left: 2%;
+    border-right: 2px solid ;
+    font-size: 20px;
+    margin-bottom: 30px;
+    /* background-color: rgb(72, 0, 255); */
+}
+.Qtri > .ThongTin > .Dong1{
+    margin-bottom: 5%;
+}
+.Qtri > .ThongTin > .Dong1 > .ten {
+    margin-bottom: 15px;
+   
+}
+.inputt{
+    padding: 7px 5px 7px 15px;
+    width: 90%;
+    background-color: rgb(220, 227, 227);
+}
+
+.dn_dk{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+.dn_dk > a >button {
+    background-color: #c0c525;    /* màu  */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    
+}
+.dn_dk > a >button:hover{
+    background-color: #c52525;    /* màu  */
+}
+
+.Qtri > .DanhSach{
+    width: 40%;
+    height: auto;
+    margin-left: 2%;
+    border-right: 2px solid ;
+    font-size: 20px;
+    margin-bottom: 30px;
+      
+}
+.timkiem{
+    display: flex;
+}
+.inputtt{
+    padding:5px 35px 5px 5px;
+    width: 60%;
+}
+.DanhSach > .timkiem > a > button{
+    background-color: #c0c525;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.DanhSach > .timkiem > a > button:hover{
+    background-color: #c52525;    /* màu  */
+   
+}
+

@@ -1,0 +1,567 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.HEADER {
+    background-color: white;    /*màu */
+    width: 100%;    /*độ rộng*/
+    height: 90PX;
+    display: flex;
+    justify-content: center;    /*căn lề*/
+    font-weight: bold;  /* chữ đậm */
+    font-size: 14px;
+
+
+}
+
+.HEADER>.LOGO {
+    background-color: white;    /*màu */
+    width: 20%;    /*độ rộng*/
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.HEADER>.LOGO>.anh {
+    width: 30%;
+    height: 100%;
+    margin-right: 50px;
+
+}
+
+.HEADER>.LOGO>.anh>img {
+    width: max-content;
+    height: 90px;
+
+}
+
+/* .HEADER > .menu{
+    width: 80%;
+    height: 90px;    
+    background-color: white; 
+} */
+.HEADER>.timkiem {
+    width: 80%;
+    height: 90px;
+}
+
+.HEADER>.timkiem>.thanhTK {
+    height: 40px;
+    width: 100%;
+    background-color: var rgb(3, 3, 3);
+    /*màu */
+    flex: 1;
+    border-radius: 2px;
+    display: inline-block;
+
+}
+
+.HEADER>.timkiem>.thanhTK>input {
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 1%;
+    height: 30px;
+}
+
+.HEADER>.timkiem>.thanhTK>a {
+    font-size: 20px;
+    color: black;
+}
+.HEADER>.timkiem>.thanhTK>a > button {
+    background-color: #c0c525;    /* màu  */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.HEADER>.timkiem>.thanhTK>a > button:hover{
+    background-color: #c52525;
+}
+.HEADER>.timkiem>.thanhTK>a:hover {
+    color: red;
+    font-size: 25PX;
+}
+
+/* menu tổng */
+
+
+.menu-line {
+    background-color: rgb(237, 169, 22);
+    /*màu */
+    width: 100%;
+    /*độ rộng*/
+    display: flex;
+    /*xoay nd*/
+    /* max-width: 1200px; độ rộng tối đa */
+    justify-content: center;
+    /*căn lề*/
+    margin: auto;
+    font-weight: bold; /* Kiểu Chữ đậm */
+    font-size: 14px;
+
+    /* position: absolute;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    z-index: 999; */
+
+
+}
+
+.menu-line>.menu-ndung {
+    width: auto;
+    text-align:left;   /* căn nội dug ra giữa */
+    line-height: 40px;    /* kc giữa các dòng */
+    font-size: 150%;    /* cỡ chữ  */
+    list-style-type: none;    /* bỏ dấu đầu dòng */
+    padding: 2px 20px 2px 20px; /* kcach ndung  trên phải dưới trái */
+    position: relative;    /*  */
+
+
+}
+
+.menu-line>.menu-ndung>.color {
+    color: black;
+    text-decoration: none;  /* kiểu k gạch chân*/
+}
+
+.menu-line>.menu-ndung>.color>i {
+    margin-left: 10px;
+
+}
+
+.menu-line>.menu-ndung:hover {
+    background-color: white;
+    font-size: 22px;
+}
+
+.menu-line>.menu-ndung:hover .color {
+    color: black;
+    font-weight: bold;
+}
+
+.menu-line>.menu-ndung>ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    z-index: 999;
+    
+
+}
+
+.menu-line>.menu-ndung:hover ul {
+    background-color: white;
+    display: inline-block;
+
+}
+
+.menu-line>.menu-ndung>ul>li {
+   
+    width: 160px;
+    /* độ dài của nd*/
+    font-size: 14px;
+    /* cỡ chữ*/
+    list-style-type: none;
+    padding: 0.5px;
+    /* border: 1px solid grey; */
+    border-top: none;
+    z-index: 1;
+}
+
+.menu-line>.menu-ndung>ul>li>a {
+    color: black;
+    text-decoration: none;
+   margin-left: 20px;
+}
+
+.menu-line>.menu-ndung>ul>li:hover {
+    padding: 0.5px;
+    background-color: rgb(237, 169, 22);
+    border-radius: 25px;  
+    /* bo góc tròn*/
+    /* margin: 10px; */
+}
+
+.menu-line>.menu-ndung>ul>li:hover a {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/*video giới thiệu  */
+
+
+.vdeo>.vdGioiThieu {
+    width: 50%;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* căn giữa */
+}
+
+.vdeo>.vdGioiThieu>video {
+    width: 100%;
+    
+  
+}
+
+.vdeo {
+    display: flex;
+    justify-content: space-around;    /* Căn lề theo chiều dọc */
+    /* align-items: center; */    /*Căn lề theo chiều ngang*/
+    width: 100%;
+    
+    border-bottom: solid gray;
+    /*dòng kẻ*/
+
+}
+
+.vdeo>img {
+    width: 20%;        
+    margin: 0;
+   
+}
+
+/* menudoc */
+.mn{
+    width: 20%;
+   
+}
+.menu-line-doc {
+    margin-left: 30%;    
+    width: 50%;    /*độ rộng*/
+    /* max-width: 1200px; độ rộng tối đa */
+    justify-content: left;    /*căn lề*/
+    margin: top;  
+    font-weight: bold;
+    font-size: 14px;
+    /* position: absolute;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    z-index: 999; */
+
+
+}
+
+.menu-line-doc>.menu-ndung-doc {
+    background-color: white;
+    width: 100%;
+    text-align: left;    /* căn nội dug ra giữa */
+    line-height: 40px;    /* kc giữa các dòng */
+    font-size: 20px;    /* cỡ chữ  */
+    list-style-type: none;    /* bỏ dấu đầu dòng */
+    padding: 2px 20px 2px 20px;    /* kcach ndung  trên phải dưới trái */
+    position: relative;    /*  */
+
+
+}
+
+.menu-line-doc>.menu-ndung-doc>.color-doc {
+    color: black;
+    text-decoration: none;
+    /* kiểu k gạch chân*/
+}
+
+.menu-line-doc>.menu-ndung-doc>.color-doc>i {
+    margin-left: 10px;
+
+}
+
+
+.menu-line-doc>.menu-ndung-doc:hover {
+    background-color: rgb(237, 169, 22);
+    border-radius: 10PX;
+}
+
+.menu-line-doc>.menu-ndung-doc:hover .color-doc {
+    color: black;
+    font-weight: bold;
+}
+
+.menu-line-doc>.menu-ndung-doc>ul {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    /* độ ưu tiên */
+    top: 0PX;
+    right: -105%;
+    /* cách lề */
+
+}
+
+.menu-line-doc>.menu-ndung-doc:hover ul {
+    background-color: white;
+    display: inline-block;
+    /**/
+
+
+}
+
+.menu-line-doc>.menu-ndung-doc>ul>li {
+
+    width: 160px;
+    /* độ dài của nd*/
+    font-size: 14px;
+    /* cỡ chữ*/
+    list-style-type: none;
+    padding: 0.5px;
+    /* border: 1px solid grey; */
+    border-top: none;
+    z-index: 1;
+}
+
+.menu-line-doc>.menu-ndung-doc>ul>li>a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu-line-doc>.menu-ndung-doc>ul>li:hover {
+    padding: 0.5px;
+    background-color: rgb(237, 169, 22);
+    border-radius: 10px;
+    /* bo góc tròn*/
+    /* margin: 10px; */
+}
+
+.menu-line-doc>.menu-ndung-doc>ul>li:hover a {
+    color: red;
+    font-weight: bold;
+}
+.menu-line-doc>.menu-ndung-doc>.coloer-doc>ul {
+    float: left;
+
+}
+.danhmuc{
+    width: 100%;
+}
+
+/* TIÊU BIỂU */
+
+
+
+
+/* cuối */
+.footer {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+.footer > .mot {
+    background-color:black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+}
+.footer > .mot >.mot-nho{
+    width: 30%;
+    display: flex;
+    height: auto;
+}
+.footer > .mot >.mot-nho >.i{
+    width: 20%;
+    margin-top: 20px;
+   
+  
+   
+}
+.footer > .mot >.mot-nho >.i> i{
+    font-size:  50px;
+    color: rgb(237, 169, 22);   
+    margin-left: 30%;
+   
+}
+.footer > .mot >.mot-nho >.i> i:hover{
+ 
+    color: red;   
+    
+   
+}
+.footer > .mot >.mot-nho >.dangky{
+    margin-top: 35px;  
+    width: 80%; 
+   
+ 
+
+}
+.footer > .mot >.mot-nho >.dangky >input{
+    font-size: 120%;
+}
+.footer > .mot >.mot-nho >.dangky > a > button{
+    font-size: 100%;
+    background-color:rgb(237, 169, 22) ;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+   
+  
+}
+.footer > .mot >.mot-nho >.dangky > a > button:hover{
+    background-color: red;
+}
+
+
+.footer > .mot >.hai-nho{
+    
+    width: 30%;
+    display: flex;
+   
+   
+}
+.footer > .mot >.hai-nho > .i{
+    width: 20%;
+    margin-top: 30px;  
+   
+
+}
+.footer > .mot >.hai-nho > .i >i {
+    font-size: 200%;
+    color: rgb(237, 169, 22);   
+    margin-left: 30%;
+}
+.footer > .mot >.hai-nho > .giao-hang {
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+ 
+
+.footer > .mot >.ba-nho{
+   
+    width: 30%;
+    height: auto;
+}
+.footer > .mot >.ba-nho >img{
+    height: 90%;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.chia{
+    width: 100%;     
+    justify-content: center;
+    display: flex;
+    background-color: black;
+  
+}
+.chia >.dongke{
+    width: 70%;
+    justify-content: center; 
+    height: 0.25px;
+    background-color: white;
+    /* border-bottom: solid white; */
+       
+  
+}
+.footer > .hai{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.footer > .hai >.mot-nho{
+    color: white;
+    width: 23%;
+    height: a;
+    margin-top: 20PX;
+    font-size: 120%;
+}
+.footer > .hai >.mot-nho > .vctul > .vct {
+    text-decoration: none;
+    color: white;
+    
+}
+.footer > .hai >.mot-nho > .vctul > .vct:hover {
+    text-decoration:underline;  /*kiểu gạch chân dưới */
+    color:red;
+    
+}
+.footer > .hai >.mot-nho >ul {
+    margin-top: 3%;
+    color: white;
+    margin-left: 10%;
+    margin-bottom: 20px;
+   
+   
+}
+.footer > .hai >.mot-nho >ul  > li{
+    margin-top: 10px;
+}
+
+.footer > .hai >.mot-nho >.ttk>  .top-tk > button {
+    font-size: 70%;
+    background-color:rgb(237, 169, 22) ;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.footer > .hai >.mot-nho >.ttk>  .top-tk > button:hover {
+    background-color: red;
+   
+}
+/*  */
+
+.footer > .hai >.hai-nho{
+    background-color:blue;
+    width: 23%;
+    height: 100px;
+}
+
+
+
+.footer > .hai >.ba-nho{
+    background-color:green;
+    width: 23%;
+    height: 100px;
+}
+.footer > .hai >.bon-nho{
+    background-color:goldenrod;
+    width: 23%;
+    height: 100px;
+}
+.footer > .ba{
+    background-color: black;
+    width: 100%;
+    height: auto;    
+    color: white;
+    /* margin-top: ;
+   */
+}
+.footer > .ba >a {
+    color: white;
+   
+    
+    margin-left: 40%;
+    font-size: 20px;
+   
+}
+.footer > .ba >a:hover {
+    color: red;
+}
+
+
+       

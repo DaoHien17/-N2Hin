@@ -1,0 +1,203 @@
+.trang {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 18px;
+    /* border-bottom: 1px solid #797878; */
+    display: flex;
+    margin-left: 10%;
+    margin-top: 1%;
+   
+
+}
+
+.trang > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    padding: 5px 5px 5px 5px ;
+}
+
+.trang > a:hover {
+    color: red;
+}
+
+.tieu-bieu {
+    width: 100%;
+    /* background-color: rgb(237, 169, 22); */
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.tieu-bieu > .danhmuc {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding:5px 10px 5px 10px  ;
+    border-radius: 10px;   
+    background-color: rgb(237, 169, 22);
+}
+
+.content {
+    width: 100%;    
+   /* Căn lề theo chiều dọc */
+    /* align-items: center;   Căn lề theo chiều ngang */
+    border-bottom: solid gray;    /*dòng kẻ*/
+    text-decoration: none;    /*K GẠCH CHÂN*/
+    text-align: center;
+    display:flex;
+    padding-bottom: 20px;    /* khoảng cách lề dưới*/
+    /* background-color: blueviolet; */
+
+}
+.content > .menu-con{
+    width: 15% ;
+    display: block;
+    height: 400px;
+    margin-left: 1%;
+    background-color: rgb(237, 169, 22);
+    border-radius: 10px;
+
+}
+.content > .menu-conn{
+    width: 15% ;
+    display: block;
+    height: 400px;
+    margin-left: 1%;
+    /* background-color: rgb(237, 169, 22); */
+    border-radius: 10px;
+
+}
+.content > .menu-con > h1{
+    width: 100%;
+    font-size: 150%;
+    color: rgb(0, 30, 255);
+}
+.content > .menu-con >ul {
+    /* display: none; */
+    /* position: absolute;       */
+    text-align: left; 
+    list-style-type: none;
+    font-size: 100%;
+    width: 100%;  
+    margin-left: 20%;  
+    
+    /* background-color: blue; */
+}
+.content > .menu-con >ul>li{
+    text-decoration: none;/* kiểu k gạch chân*/    
+    margin-top: 10PX;
+    
+}
+.content > .menu-con >ul>li> a{
+    text-decoration: none;  
+    color: black;
+    
+     /* display: none; */
+    /* position: absolute;       */
+
+}
+.content > .menu-con >ul>li> a:hover {
+    padding: 10px;
+    font-weight: bold; /* Kiểu Chữ đậm */
+    /* background-color: gray; */
+    color: red;  
+    border-radius: 10px;
+}
+.content > .mat-hang {
+    width: 85%;  
+}
+.content >.mat-hang > .Chocanh {
+    display:flex; /*  xoay thẳng nd */
+    flex-wrap: nowrap;
+    width: 100%; 
+    /* flex-wrap: wrap;     */
+    justify-content: center;   /* Căn lề theo chiều dọc */
+    align-items: center;   /*Căn lề theo chiều ngang*/   
+    text-decoration: none;
+    padding-bottom: 20px;    /* khoảng cách lề dưới*/
+
+}
+
+.Chocanh>.cho {
+    width: 23%;
+    /* border: 2px solid rgb(154, 205, 50); */
+    text-align: left;
+    margin-left: 10px;
+    flex-wrap: nowrap;
+    border: solid gray;    /*dòng kẻ*/
+
+
+}
+
+
+
+.Chocanh>.cho > .anh-sp {
+    width: 100%;
+    height: 350px;
+    
+}
+
+.Chocanh>.cho > .anh-sp> a>img {
+    width: 100%;
+    height: 100%;
+   display: block;
+   margin : auto; 
+   object-fit: fill;
+   
+
+   
+   
+   /* margin-right: auto; */
+
+}
+
+.Chocanh>.cho>a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 1px 2px 2px 2px;
+ 
+}
+.Chocanh > .cho > .Gia {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 5%;
+}
+.Chocanh > .cho > .Gia > a{
+    color: red;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 120%;
+    font-weight: bold; /* Kiểu Chữ đậm */
+    text-decoration: none;  /* kiểu k gạch chân*/
+}
+.Chocanh > .cho > .Gia > a>button{
+    background-color: #c52525;    /* màu  */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 90%;    
+}
+.Chocanh > .cho > .Gia > a>button:hover{    
+    background-color: yellowgreen; /* màu  */
+
+}
+.Chocanh>.cho>a:hover {
+    color: red;
+}
+
+.Chocanh>.cho>.anh-sp >a>img:hover {
+    width: 90%;
+    
+}
+
+
