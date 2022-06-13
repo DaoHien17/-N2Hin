@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/alaska.css">
     <link rel="stylesheet" href="CSS/GioHang.CSS">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
 </head>
 
@@ -115,7 +114,7 @@
     <div class="frm-giohang">
         <div class="giohang">
             <div style="padding: 30px;" class="giohangcuaban">
-                <h2 >GIỎ HÀNG CỦA BẠN</h2>
+                <h2>GIỎ HÀNG CỦA BẠN</h2>
                 <table>
                     <tr>
                         <th>Sản phẩm</th>
@@ -123,106 +122,44 @@
                         <th>Số lượng</th>
                         <th>Tổng tiền</th>
                     </tr>
-                    <tr>
-                        <td>
-                            <div class="sanpham">
-                                <img width="100" src="Ảnh/chó/HUSKY/1.jfif"/>
-                                <div class="content_sanpham">
-                                    <p> Chó HUSKY - Trắng </p>
-
-                                </div>
-                            </div>
-                        </td>
-                        <td>50.000.000đ</td>
-                        <td class="quantity">
-                            <button onclick="Giam(1)">-</button>
-                            <input id="q_1" type="text" onchange="updateQuantity(01)" value="0">
-                            <button onclick="Tang(1)">+</button>
-                            </td>
-                        <td>0đ </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="sanpham">
-                                <img width="100" src="Ảnh/chó/HUSKY/1.jfif"/>
-                                <div class="content_sanpham">
-                                    <p> Chó HUSKY - Trắng </p>
-
-                                </div>
-                            </div>
-                        </td>
-                        <td>50.000.000đ</td>
-                        <td class="quantity">
-                            <button onclick="Giam(1)">-</button>
-                            <input id="q_1" type="text" onchange="updateQuantity(01)" value="0">
-                            <button onclick="Tang(1)">+</button>
-                            </td>
-                        <td>0đ </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="sanpham">
-                                <img width="100" src="Ảnh/chó/HUSKY/1.jfif"/>
-                                <div class="content_sanpham">
-                                    <p> Chó HUSKY - Trắng </p>
-
-                                </div>
-                            </div>
-                        </td>
-                        <td>50.000.000đ</td>
-                        <td class="quantity">
-                            <button onclick="Giam(1)">-</button>
-                            <input id="q_1" type="text" onchange="updateQuantity(01)" value="0">
-                            <button onclick="Tang(1)">+</button>
-                            </td>
-                        <td>0đ </td>
+                    <tr id="gioHang">
                     </tr>
                 </table>
-        
+
             </div>
             <div style="padding: 30px;" class="Thongtindonhang">
-                <h2 >Thông tin đơn hàng</h2> <br>
+                <h2>Thông tin đơn hàng</h2> <br>
                 <div class="ctHD">
+
+
                     <div class="NDCTHD">
-                        <h3 >Sản Phẩm: </h3>
-                        <div class="tien"> ALASKA Nâu Đỏ</div>
+                        <h3>Giao Hàng: </h3>
+                        <div class="tien" style="font-size: 14px ;"> Miễn Phí <br> Thanh toán khi nhận hàng</div>
                     </div>
                     <div class="NDCTHD">
-                        <h3 >Loại: </h3>
-                        <div class="tien"> ALASKA </div>
-                    </div>
-                    <div class="NDCTHD">
-                        <h3 >Số Lượng: </h3>
-                        <div class="tien"> 1 </div>
-                    </div>
-                    <div class="NDCTHD">
-                        <h3 >Giao Hàng: </h3>
-                        <div class="tien" style="font-size: 14px ;"> Miễn Phí <br>  Thanh toán khi nhận hàng</div>
-                    </div>
-                    <div class="NDCTHD">
-                        <h3 >Khách Hàng: </h3>
+                        <h3>Khách Hàng: </h3>
                         <div class="tien"> Đào Thị Hiên</div>
                     </div>
                     <div class="NDCTHD">
-                        <h3 >Địa chỉ: </h3>
+                        <h3>Địa chỉ: </h3>
                         <div class="tien" style="font-size: 14px ;"> Chí Tân - Khoái Châu - Hưng Yên</div>
                     </div>
                     <div class="NDCTHD">
-                        <h3 >Điện Thoại: </h3>
+                        <h3>Điện Thoại: </h3>
                         <div class="tien"> 0347874930</div>
                     </div>
                     <div class="NDCTHD">
-                        <h3 >Tổng Thanh Toán: </h3>
-                        <div class="tien">2.700.000 VNĐ </div>
-                    </div>  
-                                    
+                        <h3>Tổng Thanh Toán: </h3>
+                        <div id="tien"></div>
+                    </div>
+
                     <!-- <h3 class="NDCTHD">Số Lượng: </h3>
                     <h3 class="NDCTHD"> Giao Hàng: </h3> -->
                     <div class="NDCTHD">
-                        <a href="index.HTML"><button> Thanh Toán </button></a> 
-                    </div>     
+                        <a><button onclick="deleteAll()"> Thanh Toán </button></a>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -384,6 +321,7 @@
 
 
 
-
+    <script src="./JS/GioHang.js">
+    </script>
 
 </body>
