@@ -1,8 +1,10 @@
-var list = [{
+ 
+var list = [{  
     Ten: "Alaska",
     Gia: 150000,
     Anh: "./Ảnh/chó/ALASKA/1.png.jfif",
-}, {
+}, 
+{
     Ten: "Poodle",
     Gia: 150000,
     Anh: "Ảnh/chó/POODLE/1.jfif",
@@ -13,7 +15,7 @@ var list = [{
     Anh: "Ảnh/chó/ALASKA/4.jpg",
 }]
 
-
+// cập nhật giỏ hàng
 function loadCart() {
     var jsonList = localStorage.getItem("gioHang")
     var listGioHang = JSON.parse(jsonList)
@@ -36,7 +38,7 @@ function loadCart() {
             <button onclick="updateGioHang(${i},0)">-</button>
             <input id="q_1" type="text"  value="${item.SoLuong}">
             <button onclick="updateGioHang(${i},1)">+</button>
-            <button onclick="deleteGioHang(${i},1)">x</button>
+            <button onclick="deleteGioHang(${i})">x</button>
         </td>
         <td>${(parseInt(item.Gia) * parseInt(item.SoLuong)).toLocaleString()}đ</td>
     </tr>`
@@ -53,14 +55,14 @@ function deleteAll() {
 loadCart()
 
 
-function addCart(index) {
+function addCart(index) {  
     var sp = list[index]
     console.log(sp)
-    var check = checkExist(sp.Ten)
+    var check = checkExist(sp.Ten) //chuyền tên sp vào function vào checkExit
 
     var jsonList = localStorage.getItem("gioHang")
-    var listGioHang = JSON.parse(jsonList)
-    if (listGioHang == null) {
+    var listGioHang = JSON.parse(jsonList) //chuyển kiểu dl về json
+    if (listGioHang == null) { 
         listGioHang = []
         listGioHang.push({
             Ten: sp.Ten,
@@ -69,10 +71,10 @@ function addCart(index) {
             SoLuong: 1
         })
     } else {
-        if (check > -1) {
+        if (check > -1) { //check trùng +1
             listGioHang[check].SoLuong = listGioHang[check].SoLuong + 1
         } else {
-            listGioHang.push({
+            listGioHang.push({ //check 0
                 Ten: sp.Ten,
                 Gia: sp.Gia,
                 Anh: sp.Anh,
@@ -81,7 +83,7 @@ function addCart(index) {
         }
     }
     localStorage.setItem("gioHang", JSON.stringify(listGioHang))
-    alert("Them gio hang thanh cong")
+    alert("Them gio hang thanh cong") //lưu 
 }
 
 function updateGioHang(index, flag) {

@@ -97,7 +97,7 @@
 .dangnhap > .dn > .dn_dk
 {
     display: flex;
-    justify-content: center;
+     justify-content: center;/*Căng lề theo trục ngang */
     margin-top: 7%;
       
 }

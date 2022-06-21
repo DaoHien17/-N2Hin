@@ -90,7 +90,7 @@
 
 
             <Li class="menu-ndung">
-                <a class="color" href="#">Tin Tức </a>
+                <a class="color" href="chocanh.html">Tin Tức </a>
                 <ul>
                     <li><a href="tintuc.html"> Tin Tức Thú Cưng</a></li>
                     <LI><a href=""> Thông tin về Cats Love Shop</a></LI>
@@ -123,21 +123,20 @@
                         <img class="img-item" onclick="ShowSP2(this)" src="Ảnh/chó/ALASKA/2.jpg">
                         <img class="img-item" onclick="ShowSP2(this)" src="Ảnh/chó/ALASKA/3.jpg">
                         <img class="img-item" onclick="ShowSP2(this)" src="Ảnh/chó/ALASKA/2.jpg">
-                        <img class="img-item" onclick="ShowSP2(this)" src="Ảnh/chó/ALASKA/2.jpg">
+                        <img class="img-item" onclick="ShowSP2(this)" src="Ảnh/chó/ALASKA/3.jpg">
                         <img class="img-item" onclick="ShowSP2(this)" src="Ảnh/chó/ALASKA/2.jpg">
 
                     </div>
                 </div>
             </section>
             <script>
-                function ShowSP1(url) {
-                    document.getElementById('sp-main').src = url;
-                }
+                
                 function ShowSP2(e) {
                     let list = document.getElementsByClassName('img-item');
                     for (let x of list) {
                         x.style.opacity = 0.5;
                     }
+                
                     document.getElementById('sp-main').src = e.src;
                     e.style.opacity = 1;
                 }
@@ -171,7 +170,7 @@
                 <div class="nut">
 
                     <a> <button onclick="addCart(0)"> Mua Ngay </button></a>
-                    <a href=""><button> <i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ hàng</button> </a>
+                    <a href="GioHang.html"><button> <i class="fa-solid fa-cart-shopping"></i>  Giỏ hàng</button> </a>
 
                 </div>
 
